@@ -1,9 +1,0 @@
-Feature: Verify if Books are added using Library API # features/BookAPI.feature:1
-
-  @smoke
-  Scenario: Verify AddBook API functionality                  # features/BookAPI.feature:3
-    Given the Book details which needs to be added to Library # features/steps/stepImpl.py:9
-    When we execute the AddBook PostAPI method                # features/steps/stepImpl.py:22
-    Then book is successfully added                           # features/steps/stepImpl.py:27
-    And status code of response should be 201                 # features/steps/stepImpl.py:38
-
